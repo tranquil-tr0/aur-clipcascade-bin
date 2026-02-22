@@ -42,7 +42,7 @@ prepare() {
 
 package() {
     install -d "${pkgdir}/usr/share/clipcascade"
-    cp -r "${srcdir}/ClipCascade/"* "${pkgdir}/usr/share/clipcascade/"
+    cp -r "${srcdir}/ClipCascade-linux-release/"* "${pkgdir}/usr/share/clipcascade/"
 
     install -d "${pkgdir}/usr/bin"
     install -Dm755 /dev/stdin "${pkgdir}/usr/bin/clipcascade" << EOF
@@ -50,7 +50,7 @@ package() {
 exec python /usr/share/clipcascade/main.py "\$@"
 EOF
 
-    install -Dm644 "${srcdir}/ClipCascade/LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+    install -Dm644 "${srcdir}/ClipCascade-linux-release/LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
     install -Dm644 "${srcdir}/clipcascade.desktop" "${pkgdir}/usr/share/applications/clipcascade.desktop"
     install -Dm644 "${srcdir}/clipcascade.png" "${pkgdir}/usr/share/pixmaps/clipcascade.png"
 }
