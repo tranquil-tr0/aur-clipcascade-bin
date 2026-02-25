@@ -1,7 +1,7 @@
 # Maintainer: Seunghun Kim <seunghunkim at proton dot me>
 pkgname=clipcascade-bin
-pkgver=3.0.0
-pkgrel=4
+pkgver=3.1.0
+pkgrel=5
 pkgdesc="ClipCascade: Sync clipboard across multiple devices"
 arch=('x86_64')
 url="https://github.com/Sathvik-Rao/ClipCascade"
